@@ -1,3 +1,5 @@
+//sum of all the even numbers till n
+
 #include <iostream>
 using namespace std;
 
