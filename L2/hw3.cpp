@@ -1,3 +1,5 @@
+//sum of all the multiples of 3 till n
+
 #include <iostream>
 using namespace std;
 

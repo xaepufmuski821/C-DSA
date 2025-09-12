@@ -1,3 +1,5 @@
+//sum of all the odd numbers till n
+
 #include <iostream>
 using namespace std;
 
@@ -8,22 +10,16 @@ int main(){
     cin >> n;
 
     while(i<=n){
-
-       
-
         if(i%2!=0){
-    
             sum = (sum+i);
 
         }
 
         i++;
-
-        cout << "SUM: " << sum << endl;
-        
+ 
     }
 
-    
+    cout << "SUM: " << sum << endl;
 
     return 0;
 

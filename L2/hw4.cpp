@@ -1,3 +1,5 @@
+//to calculate factor of n
+
 #include <iostream>
 using namespace std;
 
