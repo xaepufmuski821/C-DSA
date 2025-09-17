@@ -12,6 +12,8 @@ int main(){
 
     }
 
+    cout << endl;
+
     vector <char> vecy = {'a' , 'b' , 'c'};
 
     for(char i : vecy){
