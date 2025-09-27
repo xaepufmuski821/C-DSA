@@ -25,7 +25,7 @@ int main(){
 
     cout << Sum(10,8) << endl;
 
-    cout << "Min number is: " << min(10,10) << endl;
+    cout << "Min number is: " << min(10,8) << endl;
 
     return 0;
 

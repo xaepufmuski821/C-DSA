@@ -1,3 +1,5 @@
+//to print all the prime numbers coming before that number
+
 #include <iostream>
 using namespace std;
 

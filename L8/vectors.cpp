@@ -8,7 +8,11 @@ int main(){
     cout << vec[0] << endl;
 
     vector <int> vec1(4,1);
-    cout << vec1[1];
+    //cout << vec1[0];
+    for(int i : vec1){
+        cout << i << " ";
+
+    }
 
     return 69;
 
