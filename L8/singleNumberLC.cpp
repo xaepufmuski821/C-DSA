@@ -4,6 +4,8 @@ Find that single one. You must implement a solution with a linear runtime comple
 
 //a vector is an array too
 
+//here LC in the name of the file stands for leetcode question
+
 #include <iostream>
 #include <vector>
 using namespace std;

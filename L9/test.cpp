@@ -1,20 +1,30 @@
+//to print the subarray whose sum is equal to target
+
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
-vector <int> PairSum(vector <int> vec , int target){
+vector <int> PairSum(vector <int> nums , int target){
 
     vector <int> ans;
+    int i = 0 , j = nums.size() - 1;
 
-    for(int i = 0 ; i<vec.size() ; i++){
-        for(int j = i+1 ; j<vec.size() ; j++){
-            if(vec[i] + vec[j] == target){
-                ans.push_back(i);
-                ans.push_back(j);
-                return ans;
-                break;
-            }
+    while(i<j){
+        if(nums[i] + nums[j] == target){
+            ans.push_back(i);
+            ans.push_back(j);
+            return ans;
+            break;
+
+        }
+
+        if(nums[i] + nums[j] > target){
+            j--;
+
+        }
+
+        if(nums[i] + nums[j] < target){
+            i++;
 
         }
 
@@ -24,14 +34,14 @@ vector <int> PairSum(vector <int> vec , int target){
 
 }
 
-int main() {
-    
-    vector <int> vec = {1,2,3,4,5};
-    int target = 7;
+int main (){
 
-    vector <int> ans = PairSum(vec , target);
+    vector <int> nums = {1,2,3,4,5};
+    int target = 9;
+
+    vector <int> ans = PairSum(nums , target);
     cout << ans[0] << " " << ans[1];
 
-    return 0;  
+    return 0;
 
 }
