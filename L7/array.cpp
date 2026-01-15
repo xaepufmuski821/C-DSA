@@ -16,6 +16,6 @@ int main(){
 
     cout << sizeof(marks) / sizeof(int) << endl;
 
-    return 69;
+   return 69;
 
-}
+}       

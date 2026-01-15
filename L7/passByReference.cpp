@@ -20,7 +20,7 @@ int main(){
     cout << "MAIN FUCTION" << endl;
 
     for(int i = 0; i<size; i++){
-        cout << mainArray[i] << endl;
+        cout << mainArray[i] << " ";
 
     }
 

@@ -1,4 +1,4 @@
-//WAF to print all the unique values in an array.
+//To print all the unique values in an array.
 
 #include <iostream>
 using namespace std;

@@ -1,3 +1,5 @@
+//write an code to take the members of an array as an input
+
 #include <iostream>
 using namespace std;
 

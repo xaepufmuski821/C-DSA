@@ -1,3 +1,4 @@
+    //To calculate the nCr of 2 number i.e 5 C 2 = 10;
 #include <iostream>
 using namespace std;
 
@@ -14,7 +15,7 @@ int factorial(int n){
 
 }
 
-int nCr(int n , int r){
+int nCr(int n , int r){ 
 
     int fact_n = factorial(n);
     int fact_r = factorial(r);

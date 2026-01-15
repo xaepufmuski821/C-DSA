@@ -35,7 +35,7 @@ int PUTPRIME(int n){
 }
 
 int main(){
-    PUTPRIME(15);
+    PUTPRIME(10);
     return 0;
 
 }

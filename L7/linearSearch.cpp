@@ -1,3 +1,5 @@
+//To locate the index of the a specific number provided by the user
+
 #include <iostream>
 using namespace std;
 
@@ -7,7 +9,7 @@ int linearSearch(int nums[] , int size){
 
     for(int i = 0; i<size; i++){
         if(targetnum == nums[i]){
-            cout << "The index of the targetnum is: ";
+            cout << "The index of the target num is: ";
             return i; //found the index
         }
 

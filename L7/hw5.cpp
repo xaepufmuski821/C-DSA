@@ -1,4 +1,4 @@
-//WAF to print intersection od 2 arrays
+//To print intersection of 2 arrays
 
 #include <iostream>
 using namespace std;
@@ -17,9 +17,7 @@ int main(){
 
             }
 
-
         }
-
 
     }
 
