@@ -1,6 +1,6 @@
-//to reverse a vector using a function
+//To reverse a vector using a function
 
-#include <iostream>
+#include <iostream> 
 #include <vector>
 using namespace std;
 
