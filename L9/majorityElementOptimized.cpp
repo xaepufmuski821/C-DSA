@@ -4,10 +4,10 @@ using namespace std;
 
 int main(){
 
-    vector <int> vec = {2,2,1,1,1,1};
+    vector <int> vec = {2,2,1,1,1,1,2,2,2,2};
     int n = vec.size();
 
-   // vector <int> sort(vec.begin() , vec.end());
+    //vector <int> sort(vec.begin() , vec.end());
 
     int freq = 1 ; int ans = vec[0];
 

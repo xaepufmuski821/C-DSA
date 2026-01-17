@@ -1,3 +1,4 @@
+//To print all the subaaray's in an array
 #include <iostream>
 using namespace std;
 

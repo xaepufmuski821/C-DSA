@@ -1,3 +1,5 @@
+//To find the most repeted element in a array/vector
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -5,7 +7,7 @@ using namespace std;
 int main(){
 
     vector <int> vec = {1,2,2,1,1};
-    int n = vec.size();;
+    int n = vec.size();
 
     for(int val : vec){
         int freq = 0;
@@ -18,7 +20,7 @@ int main(){
         }
 
         if(freq >= n/2){
-            cout << "Majority element: "<<val;
+            cout << "Majority element: " << val;
             break;
         }
 
