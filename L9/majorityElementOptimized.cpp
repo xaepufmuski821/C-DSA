@@ -1,15 +1,18 @@
+//To find the majority element
+
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main(){
 
-    vector <int> vec = {2,2,1,1,1,1,2,2,2,2};
+    vector <int> vec = {2,2,1,1,1,1,2,2,2};
     int n = vec.size();
 
-    //vector <int> sort(vec.begin() , vec.end());
+    sort(vec.begin() , vec.end());
 
-    int freq = 1 ; int ans = vec[0];
+    int freq = 1 ;
 
     for(int i = 1 ; i < n ; i++){
         if(vec[i] == vec[i-1]){
@@ -17,11 +20,10 @@ int main(){
 
         }else{
              freq = 1;
-             ans = vec[i];
-
+            
         }
 
-        if(freq >= n/2){
+        if(freq > n/2){
             cout << "majority element: " << vec[i];
             break;
         }
