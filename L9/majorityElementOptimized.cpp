@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
 
-    vector <int> vec = {2,2,1,1,1,1,2,2,2};
+    vector <int> vec = {2,2,1,1,1,1,2};
     int n = vec.size();
 
     sort(vec.begin() , vec.end());
