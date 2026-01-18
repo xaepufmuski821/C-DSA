@@ -1,4 +1,4 @@
-//To calculate x^n in an optimised way
+//Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
 
 #include <iostream>
 using namespace std;
