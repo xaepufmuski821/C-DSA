@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int powCal(int x , int n){
+double powCal(double x , int n){
     //These all are corner cases
     if(n == 0) return 1;
     if(x == 0) return 0;
@@ -21,7 +21,7 @@ int powCal(int x , int n){
 
     }
 
-    int ans = 1;
+    double ans = 1;
 
     //Main code
     while(binForm > 0){
