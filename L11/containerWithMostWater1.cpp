@@ -28,7 +28,7 @@ int main(){
             maxSize = max(cntr , maxSize);
 
         }
-
+        
     }
 
     cout << "Max Water: " << maxSize;
