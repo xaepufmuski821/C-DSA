@@ -20,7 +20,6 @@ int singleNum(vector <int> &nums){
 
 }
 
-
 int main(){
 
     vector <int> nums = {4,1,2,1,2};
