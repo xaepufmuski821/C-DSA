@@ -17,15 +17,24 @@ using namespace std;
 int main(){
 
     vector <int> vec = {1,2,3,4};
-    int prefix = vec[0] , suffix = vec[vec.size() - 1];
+    int n = vec.size();
+    vector <int> ans(n , 1);
 
     for(int i = 1 ; i < vec.size() ; i++){
-        prefix = prefix * vec[i - 1];
+        ans[i] = ans[i - 1] * vec[i - 1];
 
     }
 
+    int suffix = 1;
+
     for(int j = vec.size() - 2 ; j >= 0 ; j--){
-        suffix = suffix * vec[j + 1];
+        suffix *= vec[j + 1];
+        ans[j] *= suffix;
+
+    }
+
+    for(int i = 0 ; i < vec.size() ; i++){
+        cout << ans[i] << " ";
 
     }
 
