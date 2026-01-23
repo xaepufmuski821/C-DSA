@@ -18,8 +18,6 @@ int main(){
     cout << *ptr << endl;
     cout << **parentPtr << endl;
 
-    
-
     return 0;
 
 }
