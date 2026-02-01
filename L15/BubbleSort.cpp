@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void sorter(vector <int> &vec){
+void sorter(vector <int> &vec){//O(n^2)
     int n = vec.size();
 
     for(int i = 0 ; i < n - 1 ; i++){
