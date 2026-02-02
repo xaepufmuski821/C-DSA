@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-void brute(vector <int> vec){
+void brute(vector <int> vec){//O(nlogn)
     sort(vec.begin() , vec.end());
 
     for(int i : vec){
@@ -13,7 +13,7 @@ void brute(vector <int> vec){
 
 }
 
-void optimised(vector <int> vec){
+void optimised(vector <int> vec){//O(n)
 
     int n = vec.size() , zeros = 0 , ones = 0 , twos = 0;
 
@@ -51,7 +51,7 @@ void optimised(vector <int> vec){
 
 }
 
-void optimal(vector <int> vec){//Dutch National Flag Algorithm
+void optimal(vector <int> vec){//Dutch National Flag Algorithm //O(n)
     int low = 0 , mid = 0 , high = vec.size() - 1;
 
     while(mid <= high){
