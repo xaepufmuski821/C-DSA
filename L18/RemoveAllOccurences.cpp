@@ -8,6 +8,7 @@ int main(){
     string str = "daabcbaabcbc";
     string part = "abc";
 
+    //Can also do with this method
     // for(int i = 0; i < str.length() ; i++){
     //     int x = str.find(part);
 
