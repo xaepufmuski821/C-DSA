@@ -1,4 +1,4 @@
-    //To calculate the nCr of 2 number i.e 5 C 2 = 10;
+//To calculate the nCr of 2 number i.e 5 C 2 = 10;
 #include <iostream>
 using namespace std;
 
