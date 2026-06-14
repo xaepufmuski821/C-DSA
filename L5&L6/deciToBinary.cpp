@@ -6,7 +6,7 @@ int main(){
     int n , x = 0 , pow = 1 , rem;
 
     cout << "Enter n: ";
-    cin >> n ;
+    cin >> n;
 
     while(n>0){
         rem = n%2;
