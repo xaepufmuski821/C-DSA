@@ -22,9 +22,10 @@ int linearSearch(int nums[] , int size){
 int main(){
 
     int arr[] = {4,2,7,8,1,2,5};
-
+ 
     cout << linearSearch(arr , 7) << endl;
 
     return 69;
 
+    
 }

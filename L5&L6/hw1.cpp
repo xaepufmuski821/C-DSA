@@ -33,7 +33,7 @@ int main(){
 
     // if(ISPOWER == false){
     //     cout << "The number isnt a power of 2" << endl;
-
+    
     // }
 
     bool isPower = n > 0 && (n & (n - 1)) == 0;
