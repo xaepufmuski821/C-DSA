@@ -14,27 +14,36 @@ Output: [24,12,8,6]*/
 #include <vector>
 using namespace std;
 
-int main(){
+vector <int> ProductExceptSelf(vector <int> &nums){
+    int n = nums.size();
 
-    vector <int> vec = {1,2,3,4};
-    int n = vec.size();
     vector <int> ans(n , 1);
-    
-    for(int i = 1 ; i < vec.size() ; i++){
-        ans[i] = ans[i - 1] * vec[i - 1];
+
+    for(int i = 1 ; i < n ; i++){
+        ans[i] = ans[i-1] * nums[i-1];
 
     }
 
     int suffix = 1;
 
-    for(int j = vec.size() - 2 ; j >= 0 ; j--){
-        suffix *= vec[j + 1];
-        ans[j] *= suffix;
+    for(int i = (n-2) ; i >= 0 ; i--){
+        suffix *= nums[i+1];
+        ans[i] *= suffix;
 
     }
+    
+    return ans;
 
-    for(int i = 0 ; i < ans.size() ; i++){
-        cout << ans[i] << " ";
+}
+
+int main(){
+
+    vector <int> nums = {1,2,3,4};
+
+    vector <int> ans = ProductExceptSelf(nums);
+
+    for(int i : ans){
+        cout << i << " ";
 
     }
 
