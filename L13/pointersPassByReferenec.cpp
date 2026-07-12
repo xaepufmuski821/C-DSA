@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 //Pass By pointer
 int func1(int *ptr){
     *ptr = 20;
