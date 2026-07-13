@@ -1,7 +1,8 @@
+//Reverse Number System Conversion (Convert Binary/Octal/Hex to Decimal)
+
 #include <iostream>
 using namespace std;
 
-// Works for any base from 2 to 16
 long long toDecimal(const string& number, int base) {
     long long ans = 0;
 
