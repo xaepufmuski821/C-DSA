@@ -2,26 +2,20 @@
 #include <vector>
 using namespace std;
 
-int main(){
-
-    vector <int> arr = {6,7,0,1,2,3,4,5};
-    int st = 0 , end = arr.size() - 1;
-
-    int tar;
-    cout << "Enter Target: ";
-    cin >> tar;
+int SearchInRotatedSortedArray(vector <int> &nums , int target){
+    int st = 0 , end = nums.size() - 1;
 
     while(st <= end){
-
         int mid = st + (end-st)/2;
 
-        if(arr[mid] == tar){
-            cout << "Index: " << mid;
-            break;
+        if(nums[mid] == target){
+            return mid;
+
         }
 
-        if(arr[st] <= arr[mid]){ // Left Sorted Array
-            if(arr[st] <= tar && tar <= arr[mid]){
+        //Left side sorted
+        if(nums[st] <= nums[mid]){
+            if(nums[st] <= target && target <= nums[mid]){
                 end = mid - 1;
 
             }else{
@@ -29,8 +23,8 @@ int main(){
 
             }
 
-        }else{ //Right Sorted Array
-            if(arr[mid] <= tar && tar <= arr[end]){
+        }else{  
+            if(nums[mid] <= target && target <= nums[end]){
                 st = mid + 1;
 
             }else{
@@ -41,6 +35,21 @@ int main(){
         }
 
     }
+
+    return -1;
+
+}
+
+int main(){
+
+    vector <int> nums = {6,7,0,1,2,3,4,5};
+
+    int target;
+
+    cout << "Enter Target: ";
+    cin >> target;
+
+    cout << SearchInRotatedSortedArray(nums , target);
 
     return 0;
 
