@@ -30,8 +30,6 @@ vector <int> Convertor(int n , int base){
 
 }
 
-
-
 int main(){ 
 
     int n;
