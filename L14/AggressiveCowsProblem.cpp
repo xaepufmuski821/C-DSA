@@ -3,21 +3,22 @@
 #include <algorithm>
 using namespace std;
 
-bool isValid(vector <int> arr , int n , int c , int Dist){
-    sort(arr.begin() , arr.end());
-    int pos = arr[0] , cows = 1;
+bool isValid(vector <int> nums , int n , int c , int Dist){
+    sort(nums.begin() , nums.end());
+    int pos = nums[0] , cows = 1;
 
     for(int i = 0 ; i < n ; i++){
-        if(arr[i] - pos >= Dist){
+        if( nums[i] - pos >= Dist){
             cows++;
-            pos = arr[i];
+            pos = nums[i];
+
         }
 
     }
-
-    if(cows == c){
+    
+    if(cows >= c){
         return true;
-            
+
     }else{
         return false;
 
@@ -25,16 +26,19 @@ bool isValid(vector <int> arr , int n , int c , int Dist){
 
 }
 
-int Ans(vector <int> arr , int n , int c){
-    int st = INT16_MAX , end = INT16_MIN , ans;
+int MaxDistChecker(vector <int> nums , int n , int c){
+    int st = 1 , end = nums[n-1] - nums[0] , ans = -1;
+
     for(int i = 0 ; i < n ; i++){
-        end = max(end , arr[i]);
-        st = min(st , arr[i]);
+        st = min(st , nums[i]);
+        end = max(end , nums[i]);
+
     }
 
     while(st <= end){
         int mid = st + (end - st)/2;
-        if(isValid(arr , n , c , mid)){
+
+        if(isValid(nums , n , c , mid)){
             ans = mid;
             st = mid + 1;
 
@@ -51,10 +55,10 @@ int Ans(vector <int> arr , int n , int c){
 
 int main(){
 
-    vector <int> arr = {1,2,8,4,9};
-    int n = arr.size() , c = 3;
+    vector <int> nums = {1, 3, 4, 7, 10, 15};
+    int n = nums.size() , c = 4;
 
-    cout << Ans(arr , n , c);
+    cout << MaxDistChecker(nums , n , c);
 
     return 0;
 
